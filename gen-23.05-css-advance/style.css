@@ -2,13 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700;900&family=Raleway:wght@100;300;500;700&display=swap');
 
 
-@media (max-width: 768px){
-    .container{
-        flex-direction: column;
-    }
-
     
-}
 
 
 *{
@@ -88,6 +82,10 @@ body{
     line-height: 25px;
 }
 
+.product:hover{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
 .bay{
     position: absolute;
     bottom: 15px;
@@ -100,4 +98,10 @@ body{
     background-color: #1b2741;
     color: #f7f6f9;
     font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .5s;
+}
+.bay button:hover{
+    transform: scale(1.1);
 }
