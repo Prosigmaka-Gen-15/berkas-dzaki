@@ -25,11 +25,26 @@
     <section class="flex mt-10 flex-wrap justify-evenly bg-white ms-10 me-10">
       <!-- Gambar Produk -->
       <div class="flex flex-col justify-between w-auto gap-4 mb-8" id="main-img">
-        <img src="/src/img/Sony1.jpg" class="w-96 h-96 aspect-square bg-contain  rounded cursor-pointer ">
+        <img
+          id="main-img-preview"
+          src="/src/img/Sony1.jpg"
+          class="object-contain w-96 h-96 aspect-square bg-contain  rounded cursor-pointer ">
         <div class="flex flex-row justify-evenly h-24" id="change-img">
-          <img src="/src/img/Sony2.jpg" class="w-20 h-20 rounded-md cursor-pointer ">
-          <img src="/src/img/Sony3.jpg" class="w-15 h-12 mt-4 rounded-md cursor-pointer ">
-          <img src="/src/img/Sony5.jpg" class="w-20 h-16 mt-3 rounded-md cursor-pointer ">
+          <img
+            src="/src/img/Sony2.jpg"
+            onmouseenter="changeImage('/src/img/Sony2.jpg')"
+            onmouseleave="changeImage('/src/img/Sony1.jpg')"
+            class="w-20 h-20 rounded-md cursor-pointer ">
+          <img
+            src="/src/img/Sony3.jpg"
+            onmouseenter="changeImage('/src/img/Sony3.jpg')"
+            onmouseleave="changeImage('/src/img/Sony1.jpg')"
+            class="w-15 h-12 mt-4 rounded-md cursor-pointer ">
+          <img
+            src="/src/img/Sony5.jpg"
+            onmouseenter="changeImage('/src/img/Sony5.jpg')"
+            onmouseleave="changeImage('/src/img/Sony1.jpg')"
+            class="w-20 h-16 mt-3 rounded-md cursor-pointer ">
         </div>
       </div>
       <div class="flex flex-col gap-4 mt-10 w-auto xl:w-2/4 justify pl-8">
@@ -42,7 +57,7 @@
         <button class="border-solid border-2 border-r-0 px-4 py-2 text-xl font-bold rounded-l-xl">-</button>
         <span class="border-solid border-t-2 border-b-2 px-4 py-2 text-lg font-bold justify-center">1</span>
         <button class="border-solid border-2 border-l-0 px-4 py-2 text-xl font-bold rounded-r-xl">+</button>
-    
+
         <button class="border-solid border-2 px-6 py-2 font-bold text-white rounded-xl bg-green-600 hover:bg-white hover:text-black hover:border-solid transition-all duration-700">Add to Cart</button>
       </div>
     </section>
