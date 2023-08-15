@@ -3,15 +3,15 @@ import React from "react";
 
 function Cart({gambar, NamaProduk, HargaProduk, Keterangan}) {
     return (
-        <div className='justtify-center items-center m-2 p-2 border-2 rounded-xl w-72  bg-slate-300'>
+        <div className='justtify-center items-center m-2 p-2 border-2 rounded-xl w-72  bg-gray-200'>
             <section className="items-center justify-center flex-col gap-4 p-4 flex-wrap ">
                 <img src={gambar} className='w-[200px] bg-inherit'/>
                 <div>
-                    <div className='flex justify-evenly'>
-                        <a className='lg:flex-warp font-sans'>{NamaProduk}</a>
-                        <span className='item-end justify-end font-bold'>{HargaProduk}</span>
+                    <div className='flex justify-between font-sans'>
+                        <a className='lg:flex-warp'>{NamaProduk}</a>
+                        <span className='item-end font-bold'>{HargaProduk}</span>
                     </div>
-                    <p className='flex justify-start text-sm'>{Keterangan}</p>
+                    <p className='flex justify-start text-sm font-semibold'>{Keterangan}</p>
                     <button className='text-center flex rounded-xl px-2 border-2 border-gray-500 hover:bg-green-600 transition'>Beli</button>
                 </div>
             </section>
